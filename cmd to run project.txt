@@ -1,0 +1,36 @@
+how to run web interface:
+step 1) Open Anaconda prompt-type jupyter notebook (hit enter)
+step 2) Open Onedrive->desktop->documents->osteoporosis_detection->flask->model.ipunb
+step 3) click on Kernel option->click on restart and run all
+
+After the completion of jupyter pgm
+step 4) open another anaconda prompt window
+we have to reach to our python app.py file so we can go one by one or by copying the path
+1st method :(hit enter after each step)
+1)cd Onedrive
+2)cd Desktop
+3)cd osteoporosis_detection
+4)cd flask
+5)python app.py 
+copy url displayed on the screen and paste in the browser
+
+2nd method:
+go to desktop->osteoporosis_detection->flask
+now copy the path and paste into anaconda prompt by adding cd before the path
+then write python app.py 
+now copy the url displayed on the screen.
+
+note:copy the url only once otherwise it quit.
+
+
+Connecting database to the web interface
+step1)go to desktop->osteoporosis_detection->flask->database->click in the path and type cmd and hit enter
+step 2) command prompt will be open on the screen then write sqlite3 Medical.db
+step 3)now type .databases
+step 4) type .tables then you can see created table nammes
+step 5)if you have to fetch details filled by the user simply type command as :select * from user_details;
+select * from user_feedback;
+and you can 
+delete from user_details;
+delete from user_feedback;
+

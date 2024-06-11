@@ -1,0 +1,21 @@
+create table user_details(
+full_name string,
+address string,
+email string,
+phone_number integer,
+gender string,
+age interger,
+dob date,
+medical_history string,
+blood_group string,
+username string unique,
+password string
+);
+
+
+create table user_feedback(
+name string,
+email string,
+subject string,
+message string
+);

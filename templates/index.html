@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_home.css') }}">
+    <title>Osteoporosis Prediction</title>
+
+    <style>
+
+		body {
+        background-image: url("{{ url_for('static', filename='b2.jpeg') }}");
+        padding-bottom:80px;
+        font-family:'Source Sans Pro', sans-serif;
+        background-repeat: no-repeat;
+        background-size: 2050px 1020px;
+}
+
+
+	</style>
+</head>
+
+<body>
+    <div>
+        <div class="header-blue">
+            <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+                <div class="container"><a class="navbar-brand" href="/disease">Osteoporosis Predictor</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse"
+                        id="navcol-1">
+
+
+                        <ul class="nav navbar-nav">
+                            
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><b>Consult Doctor</b></a>
+                                <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" role="presentation" href="https://www.askapollo.com/treatments/osteoporosis-treatment/" target="_blank">Osteoporosis specialist</a>
+                                    <a class="dropdown-item" role="presentation" href="https://www.askapollo.com/physical-appointment/dietitian-and-nutritionist/" target="_blank">Nutrition Specialist</a>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav">
+                            
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><b>Diagnosis</b></a>
+                                <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" role="presentation" href="#" target="_blank">Medical history and physical exam</a>
+                                    <a class="dropdown-item" role="presentation" href="#" target="_blank">Bone mineral density (BMD) testing</a>
+                                    <a class="dropdown-item" role="presentation" href="#" target="_blank">Blood tests</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav">
+                            
+
+                           <a style="text-decoration:none;" class="navbar-text" href="/jumbo"><b>Treatment of Osteoporosis</b></a> 
+                            <!-- <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Treatment of Osteoporosis</a> -->
+                                <!-- <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" role="presentation" href="#" target="_blank">Medicines for Prevention and Treatment</a>
+                                    <a class="dropdown-item" role="presentation" href="#" target="_blank">Nutrition</a>
+                                    <a class="dropdown-item" role="presentation" href="#" target="_blank">Calcium and Vitamin D</a>
+                                    <a class="dropdown-item" role="presentation" href="#" target="_blank">Exercise and Safe Movement</a>
+                                    <a class="dropdown-item" role="presentation" href="#" target="_blank">Overall Health</a>
+                                </div> -->
+                            </li>
+                        </ul>
+
+
+                        <ul class="nav navbar-nav">
+                            
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><b>About Us</b> </a>
+                                <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" role="presentation" href="/team">Team</a>
+                                    <a class="dropdown-item" role="presentation" href="/faq">FAQ</a>
+                                    <a class="dropdown-item" role="presentation" href="/contact">Contact Us</a>
+                                </div>
+                            </li>
+                        </ul>
+
+    
+
+                        <form class="form-inline mr-auto" target="_self">
+                            <!-- <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" id="search-field"></div> -->
+                        </form><span class="navbar-text"> <a href="/login" class="login">Logout</a></span><a class="btn btn-light action-button" value="{{current_user}}" role="button" href="#">Hi {{current_user}}</a></div>
+                </div>
+            </nav>
+            <div class="container hero">
+                <div class="row">
+<!--                        
+                        <h1 style = "font-family:georgia,garamond,serif;font-size:40px;">Healthy Bones.</h1>
+                        <p style = "font-family:georgia,garamond,serif;font-size:22px; color:olive;">To succeed in life and stand up straight, we all need a strong bone structure. So take care of them, stay healthy, and be safe. Osteoporosis is a disease that attacks the bones in your body. It happens to really almost everyone when they get really old. But for women, after menopause, they can lose up to 30 percent of their bone mass.</p>
+                     -->
+                    
+                    <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+                        <!-- <div class="iphone-mockup"><img src="assets/img/iphone.svg" class="device">
+                            <div class="screen"></div>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
