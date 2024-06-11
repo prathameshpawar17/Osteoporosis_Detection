@@ -54,12 +54,12 @@ now copy the url displayed on the screen.
 note:copy the url only once otherwise it quit.
 
 
-Connecting database to the web interface
+Connecting the database to the web interface
 step1)go to desktop->osteoporosis_detection->flask->database->click in the path and type cmd and hit enter
-step 2) command prompt will be open on the screen then write sqlite3 Medical.db
+step 2) A command prompt will be open on the screen then write sqlite3 Medical.db
 step 3)now type .databases
-step 4) type .tables then you can see created table nammes
-step 5)if you have to fetch details filled by the user simply type command as :select * from user_details;
+step 4) type .tables then you can see created table names
+step 5)if you have to fetch details filled by the user simply type the command as :select * from user_details;
 select * from user_feedback;
 and you can 
 delete from user_details;
